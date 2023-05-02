@@ -10,6 +10,9 @@ import { OuiComponent } from './oui/oui.component';
 import { NonComponent } from './non/non.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { LesAmisComponent } from './les-amis/les-amis.component';
+import { UnAmiComponent } from './un-ami/un-ami.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FooterComponent } from './footer/footer.component';
     OuiComponent,
     NonComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    LesAmisComponent,
+    UnAmiComponent,
+    
   ],
   imports: [
     BrowserModule,
