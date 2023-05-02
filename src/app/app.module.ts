@@ -12,6 +12,12 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LesAmisComponent } from './les-amis/les-amis.component';
 import { UnAmiComponent } from './un-ami/un-ami.component';
+import { PetanqueUnoComponent } from './petanque-uno/petanque-uno.component';
+import { PetanqueUnComponent } from './petanque-un/petanque-un.component';
+import { PetanqueDosComponent } from './petanque-dos/petanque-dos.component';
+import { PackBoissonComponent } from './pack-boisson/pack-boisson.component';
+import { PastisComponent } from './pastis/pastis.component';
+import { LaspecialelasallaleComponent } from './laspecialelasallale/laspecialelasallale.component';
 
 
 @NgModule({
@@ -25,6 +31,12 @@ import { UnAmiComponent } from './un-ami/un-ami.component';
     FooterComponent,
     LesAmisComponent,
     UnAmiComponent,
+    PetanqueUnoComponent,
+    PetanqueUnComponent,
+    PetanqueDosComponent,
+    PackBoissonComponent,
+    PastisComponent,
+    LaspecialelasallaleComponent,
     
   ],
   imports: [
