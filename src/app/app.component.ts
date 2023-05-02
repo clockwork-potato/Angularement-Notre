@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'JvaisTangular';
+  name = 'tesdt';
   
   constructor(private router: Router) {}
 
