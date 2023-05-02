@@ -1,56 +1,27 @@
-<header class="bg-blue-500 text-white shadow-md">
-    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+<header class="fixed top-0 w-full z-50 bg-gradient-to-r from-emerald-400 to-sky-400 text-white px-4 py-4 shadow-md">
+    <nav class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
             <a href="#" class="text-2xl font-bold">{{title}}</a>
         </div>
         <div class="hidden md:flex items-center space-x-4">
-            <a href="#" class="hover:text-blue-300" routerLink="/">Accueil</a>
-            <a href="#" class="hover:text-blue-300" routerLink="/oui">Patés</a>
-            <a href="#" class="hover:text-blue-300" routerLink="/non">Terrines</a>
-            <div class="relative inline-block">
-                <button class="inline-flex items-center space-x-1 focus:outline-none"
-                    (click)="dropdownOpen = !dropdownOpen">
-                    <span>Menu</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="w-5 h-5 transition-transform duration-300" [ngClass]="{'rotate-180': dropdownOpen}">
-                        <path d="M12 14l-4-4h8l-4 4z" />
-                    </svg>
-                </button>
-                <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-xl z-10 transition-opacity duration-300 opacity-0"
-                    [ngClass]="{'opacity-100': dropdownOpen, 'pointer-events-none': !dropdownOpen}">
-                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-                        routerLink="/example1">Exemple 1</a>
-                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-                        routerLink="/example2">Exemple 2</a>
-                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-                        routerLink="/example3">Exemple 3</a>
-                </div>
-            </div>
+            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLink="/">Accueil</a>
+            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLink="/oui">Patés</a>
+            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLink="/non">Terrines</a>
         </div>
-        <div class="md:hidden">
-            <button class="focus:outline-none" (click)="mobileMenuOpen = !mobileMenuOpen">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd"
-                        d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 5a1 1 0 100 2h14a1 1 0 100-2H3z"
-                        clip-rule="evenodd" />
-                </svg>
-            </button>
-        </div>
-        <div class="bg-blue-600 w-full fixed inset-x-0 top-0 transform -translate-y-full md:hidden transition duration-300"
-            [ngClass]="{'translate-y-0': mobileMenuOpen}">
-            <nav class="text-white pt-8">
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/"
-                    (click)="mobileMenuOpen = false">Accueil</a>
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/oui"
-                    (click)="mobileMenuOpen = false">Patés</a>
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/non"
-                    (click)="mobileMenuOpen = false">Terrines</a>
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/example1"
-                    (click)="mobileMenuOpen = false">Exemple 1</a>
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/example2"
-                    (click)="mobileMenuOpen = false">Exemple 2</a>
-                <a href="#" class="block px-4 py-2 mb-2 hover:text-blue-300" routerLink="/example3"
-                    (click)="mobileMenuOpen = false">Exemple 3</a>
-                <!-- Ajoutez ici d'autres liens de navigation si nécessaire -->
-            </nav>
-        </div>
+        <button class="md:hidden focus:outline-none" (click)="mobileMenuOpen = !mobileMenuOpen">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <ul [ngClass]="{'show': mobileMenuOpen}"
+        class="nav-menu md:hidden p-4 space-y-4 bg-gradient-to-r from-emerald-400 to-sky-400 text-white">
+        <li>
+            <a href="#" class="hover:text-yellow-200" routerLink="/" (click)="mobileMenuOpen = false">Accueil</a>
+        </li>
+        <li>
+            <a href="#" class="hover:text-yellow-200" routerLink="/oui" (click)="mobileMenuOpen = false">Patés</a>
+        </li>
+        <li>
+            <a href="#" class="hover:text-yellow-200" routerLink="/non" (click)="mobileMenuOpen = false">Terrines</a>
+        </li>
+    </ul>
+</header>

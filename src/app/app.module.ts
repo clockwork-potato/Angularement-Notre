@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { OuiComponent } from './oui/oui.component';
 import { NonComponent } from './non/non.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     OuiComponent,
     NonComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
