@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { OuiComponent } from './oui/oui.component';
+import { NonComponent } from './non/non.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormulaireComponent,
-    NavbarComponent
+    NavbarComponent,
+    OuiComponent,
+    NonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
