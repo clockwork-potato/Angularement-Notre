@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'JvaisTangular';
+  
+  constructor(private router: Router) {}
+
+  navigateToFeatures() {
+    this.router.navigate(['/features']);
+  }
+
+  navigateToContact() {
+    this.router.navigate(['/contact']);
+  }
 }
+
