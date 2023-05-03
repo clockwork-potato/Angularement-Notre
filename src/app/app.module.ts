@@ -19,6 +19,7 @@ import { PackBoissonComponent } from './pack-boisson/pack-boisson.component';
 import { PastisComponent } from './pastis/pastis.component';
 import { LaspecialelasallaleComponent } from './laspecialelasallale/laspecialelasallale.component';
 import { AjoutAmiModalComponent } from './ajout-ami-modal/ajout-ami-modal.component';
+import { MarioComponent } from './mario/mario.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { AjoutAmiModalComponent } from './ajout-ami-modal/ajout-ami-modal.compon
     PastisComponent,
     LaspecialelasallaleComponent,
     AjoutAmiModalComponent,
+    MarioComponent,
     
   ],
   imports: [
