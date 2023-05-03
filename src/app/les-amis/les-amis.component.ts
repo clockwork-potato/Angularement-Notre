@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-les-amis',
   templateUrl: './les-amis.component.html',
-  styleUrls: ['./les-amis.component.css']
+  styleUrls: ['./les-amis.component.css'],
+  
 })
 export class LesAmisComponent {
   amis = [
@@ -19,7 +21,7 @@ export class LesAmisComponent {
   constructor() {
     setTimeout(() => {
       this.authorizeAmi = true;
-    }, 3000);
+    }, 30);
   }
 
   toggleModal() {
@@ -28,4 +30,5 @@ export class LesAmisComponent {
   addAmiToList(nom: string) {
     this.amis.push({ nom });
   }
+  
 }
