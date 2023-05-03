@@ -1,5 +1,24 @@
-<br>
-<br>
-<br>
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-6 text-center">User Profile</h1>
+    <div class="flex flex-col items-center">
+        <img src="https://source.unsplash.com/random/300x300?mario" alt="Random Mario"
+            class="w-48 h-48 object-cover mb-6 rounded" />
 
-<p>mario works!</p>
+        <p class="mb-2">Nom: {{ userName }}</p>
+        <p class="mb-2">Age: {{ userAge }}</p>
+        <p class="mb-2">Le fetiche: {{ userFavNumber }}</p>
+        <p class="mb-4">Age + 10: {{ agePlusTen() }}</p>
+
+        <div class="mb-4">
+            <label for="userNameInput" class="block mb-2">Nom:</label>
+            <input type="text" id="userNameInput" class="border border-gray-300 rounded p-2 w-full"
+                [(ngModel)]="userName" />
+        </div>
+
+        <button class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600"
+            [disabled]="userName === ''" [ngClass]="{ 'opacity-50 cursor-not-allowed': userName === '' }"
+            (click)="resetUserName()">
+            Reset
+        </button>
+    </div>
+</div>
