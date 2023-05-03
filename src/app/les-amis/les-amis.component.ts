@@ -14,10 +14,18 @@ export class LesAmisComponent {
     { nom: 'Marc Assin' }
   ]
   authorizeAmi:boolean = false;
+  showModal: boolean = false;
 
   constructor() {
     setTimeout(() => {
       this.authorizeAmi = true;
     }, 3000);
+  }
+
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
+  addAmiToList(nom: string) {
+    this.amis.push({ nom });
   }
 }
