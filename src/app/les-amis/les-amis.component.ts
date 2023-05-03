@@ -12,5 +12,12 @@ export class LesAmisComponent {
     { nom: 'Ella Vator' },
     { nom: 'Sarah Croche' },
     { nom: 'Marc Assin' }
-  ];
+  ]
+  authorizeAmi:boolean = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.authorizeAmi = true;
+    }, 3000);
+  }
 }
