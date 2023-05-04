@@ -1,6 +1,6 @@
 [build]
   command = "ng build"
-  publish = "dist/JvaisTangular"
+  publish = "dist/jvais-tangular"
 
 [[redirects]]
   from = "/*"
