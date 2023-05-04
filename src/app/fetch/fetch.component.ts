@@ -24,9 +24,9 @@ export class FetchComponent implements OnInit  {
     const apiUrl: string = `https://api.open-meteo.com/v1/forecast?latitude=43.60&longitude=1.44&hourly=temperature_2m`;
 
     fetch(apiUrl)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
+      .then((hop) => {
+        if (hop.ok) {
+          return hop.json();
         } else {
           throw new Error('Erreur lors de la récupération des données météo');
         }
