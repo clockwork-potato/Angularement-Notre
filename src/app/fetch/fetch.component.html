@@ -1,13 +1,23 @@
 <br>
 <br>
 <br>
-<div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold mb-4">Temperatures</h1>
-    <ul class="space-y-4">
-      <li *ngFor="let temperature of temperatures; index as index" class="flex items-center space-x-2">
-        <i class="fas fa-thermometer-half text-2xl text-blue-500"></i>
-        <span class="text-xl font-medium">Température à l'heure {{ index }} : {{ temperature }} °C</span>
-      </li>
-    </ul>
-  </div>
-  
+<div class="container mx-auto px-4 py-8 min-h-screen">
+    {{lat}}
+    <div class=" p-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Temperatures</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <ng-container *ngFor="let temperature of temperatures; index as index">
+                <div
+                    class="bg-gradient-to-r from-emerald-200 to-sky-200 rounded-lg shadow-md p-4 transform hover:shadow-lg hover:-translate-y-1 transition duration-300 ease-in-out">
+                    <div class="text-center mb-2">
+                        <i class="fas fa-thermometer-half text-3xl text-indigo-700"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm font-semibold text-indigo-500">Heure {{ index }}</p>
+                        <p class="text-lg font-semibold text-indigo-700">{{ temperature }} °C</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
