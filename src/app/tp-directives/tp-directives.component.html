@@ -3,7 +3,7 @@
 <br>
 <button (click)="toggle()"
     class="bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
-    test
+    {{ show ? 'Masquer \<p>' : 'Afficher \<p>' }} 
 </button>
 <p *ngIf="show" class="mt-4 text-lg font-medium">JE SUIS UN P</p>
 
