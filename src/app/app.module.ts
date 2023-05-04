@@ -21,6 +21,7 @@ import { PastisComponent } from './pastis/pastis.component';
 import { LaspecialelasallaleComponent } from './laspecialelasallale/laspecialelasallale.component';
 import { AjoutAmiModalComponent } from './ajout-ami-modal/ajout-ami-modal.component';
 import { MarioComponent } from './mario/mario.component';
+import { FetchComponent } from './fetch/fetch.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { MarioComponent } from './mario/mario.component';
     LaspecialelasallaleComponent,
     AjoutAmiModalComponent,
     MarioComponent,
+    FetchComponent,
     
     
   ],
