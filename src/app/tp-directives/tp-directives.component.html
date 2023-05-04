@@ -6,7 +6,7 @@
     {{ show ? 'Masquer \<p>' : 'Afficher \<p>' }} 
 </button>
 <p *ngIf="show" class="mt-4 text-lg font-medium">JE SUIS UN P</p>
-
+ 
 <ul class="mt-4 space-y-2">
     <li *ngFor="let item of items; index as index" class="p-2 rounded" 
         [ngClass]="{
