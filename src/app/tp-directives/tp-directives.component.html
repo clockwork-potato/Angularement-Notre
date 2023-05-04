@@ -1,0 +1,21 @@
+<br>
+<br>
+<br>
+<button (click)="toggle()"
+    class="bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+    test
+</button>
+<p *ngIf="show" class="mt-4 text-lg font-medium">JE SUIS UN P</p>
+
+<ul class="mt-4 space-y-2">
+    <li *ngFor="let item of items; index as index" class="p-2 rounded" 
+        [ngClass]="{
+            'bg-gray-200 text-gray-700': index < 3,
+            'bg-blue-500 text-white': index >= 3 && index < 5,
+            'bg-green-500 text-white': index >= 5 && index < 7,
+            'bg-yellow-500 text-white': index >= 7
+         }">
+        {{ item }}
+    </li>
+
+</ul>

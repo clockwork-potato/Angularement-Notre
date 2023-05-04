@@ -1,7 +1,7 @@
 <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-emerald-400 to-sky-400 text-white px-4 py-4 shadow-md">
     <nav class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
-            <a href="#" class="text-2xl font-bold">{{title}}</a>
+            <a href="#" class="text-2xl font-bold"> 🦼 {{title}}</a>
         </div>
         <div class="hidden md:flex items-center space-x-4">
             <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Accueil</a>
@@ -9,6 +9,7 @@
             <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/non">Terrines</a>
             <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/mario">Mario</a>
             <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/fetch">Fetch</a>
+            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/jeff">Tp Jeff</a>
         </div>
         <button class="md:hidden focus:outline-none" (click)="mobileMenuOpen = !mobileMenuOpen">
             <i class="fas fa-bars"></i>
@@ -30,6 +31,9 @@
         </li>
         <li>
             <a href="#" class="hover:text-yellow-200" routerLink="/fetch" (click)="mobileMenuOpen = false">fetch</a>
+        </li>
+        <li>
+            <a href="#" class="hover:text-yellow-200" routerLink="/jeff" (click)="mobileMenuOpen = false">Tp Jeff</a>
         </li>
     </ul>
 </header>

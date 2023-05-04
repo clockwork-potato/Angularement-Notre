@@ -28,6 +28,7 @@ import { AjoutAmiModalComponent } from './ajout-ami-modal/ajout-ami-modal.compon
 import { MarioComponent } from './mario/mario.component';
 import { FetchComponent } from './fetch/fetch.component';
 import { DatePipe } from '@angular/common';
+import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { DatePipe } from '@angular/common';
     AjoutAmiModalComponent,
     MarioComponent,
     FetchComponent,
+    TpDirectivesComponent,
     
     
   ],
