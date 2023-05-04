@@ -1,6 +1,6 @@
 [build]
   command = "ng build --prod"
-  publish = "dist/your-project-name"
+  publish = "dist/JvaisTangular"
 
 [[redirects]]
   from = "/*"
