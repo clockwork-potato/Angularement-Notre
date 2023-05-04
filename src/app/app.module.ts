@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+
+registerLocaleData(localeFr, 'fr-FR');
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
@@ -22,7 +27,7 @@ import { LaspecialelasallaleComponent } from './laspecialelasallale/laspecialela
 import { AjoutAmiModalComponent } from './ajout-ami-modal/ajout-ami-modal.component';
 import { MarioComponent } from './mario/mario.component';
 import { FetchComponent } from './fetch/fetch.component';
-
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -53,7 +58,7 @@ import { FetchComponent } from './fetch/fetch.component';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
