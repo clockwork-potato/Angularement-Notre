@@ -34,7 +34,7 @@ export class FetchComponent implements OnInit  {
       .then((data: WeatherData) => {
         console.log(data);
         this.temperatures = data.hourly.temperature_2m;
-        this.lat = `Latitude: ${data.latitude} Longitude: ${data.longitude}`;
+        this.lat = `Latitude: ${data.latitude} & Longitude: ${data.longitude}`;
       })
       .catch((error) => {
         console.error('Erreur lors de la récupération des données météo:', error);

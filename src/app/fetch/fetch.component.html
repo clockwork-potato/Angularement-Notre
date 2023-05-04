@@ -2,9 +2,10 @@
 <br>
 <br>
 <div class="container mx-auto px-4 py-8 min-h-screen">
-    {{lat}}
+    
     <div class=" p-6 max-w-4xl mx-auto">
         <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Temperatures</h1>
+        <h3 class="text-xl font-bold mb-6 text-center text-blue-600"> {{lat}} </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <ng-container *ngFor="let temperature of temperatures; index as index">
                 <div
