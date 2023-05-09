@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   dropdownOpen = false;
   mobileMenuOpen = false;
-  title = "JvaisTangular"
+  title = "Angule Donc"
 }

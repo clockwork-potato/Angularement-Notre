@@ -1,16 +1,24 @@
 <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-emerald-400 to-sky-400 text-white px-4 py-4 shadow-md">
     <nav class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
-            <a href="#" class="text-2xl font-bold"> 🦼 {{title}}</a>
+            <a routerLink="/" class="text-2xl font-bold"> 🦼 {{title}}</a>
         </div>
         <div class="hidden md:flex items-center space-x-4">
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Accueil</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/oui">Patés</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/non">Terrines</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/mario">Mario</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/fetch">Fetch</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/jeff">Tp Jeff</a>
-            <a href="#" class="text-lg font-medium hover:text-yellow-200" routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/emit">Emit</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200"
+                [routerLinkActiveOptions]="{exact: true}" routerLink="/">Accueil</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/oui">Patés</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/non">Terrines</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/mario">Mario</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/fetch">Fetch</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/jeff">Tp Jeff</a>
+            <a class="text-lg font-medium hover:text-yellow-200"
+                routerLinkActive="border-b-2 border-yellow-200 text-yellow-200" routerLink="/emit">Emit</a>
         </div>
         <button class="md:hidden focus:outline-none" (click)="mobileMenuOpen = !mobileMenuOpen">
             <i class="fas fa-bars"></i>
@@ -19,25 +27,25 @@
     <ul [ngClass]="{'show': mobileMenuOpen}"
         class="nav-menu md:hidden p-4 space-y-4 bg-gradient-to-r from-emerald-400 to-sky-400 text-white">
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/" (click)="mobileMenuOpen = false">Accueil</a>
+            <a class="hover:text-yellow-200" routerLink="/" (click)="mobileMenuOpen = false">Accueil</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/oui" (click)="mobileMenuOpen = false">Patés</a>
+            <a class="hover:text-yellow-200" routerLink="/oui" (click)="mobileMenuOpen = false">Patés</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/non" (click)="mobileMenuOpen = false">Terrines</a>
+            <a class="hover:text-yellow-200" routerLink="/non" (click)="mobileMenuOpen = false">Terrines</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/mario" (click)="mobileMenuOpen = false">Mario</a>
+            <a class="hover:text-yellow-200" routerLink="/mario" (click)="mobileMenuOpen = false">Mario</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/fetch" (click)="mobileMenuOpen = false">fetch</a>
+            <a class="hover:text-yellow-200" routerLink="/fetch" (click)="mobileMenuOpen = false">fetch</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/jeff" (click)="mobileMenuOpen = false">Tp Jeff</a>
+            <a class="hover:text-yellow-200" routerLink="/jeff" (click)="mobileMenuOpen = false">Tp Jeff</a>
         </li>
         <li>
-            <a href="#" class="hover:text-yellow-200" routerLink="/emit" (click)="mobileMenuOpen = false">Emit</a>
+            <a class="hover:text-yellow-200" routerLink="/emit" (click)="mobileMenuOpen = false">Emit</a>
         </li>
     </ul>
 </header>
