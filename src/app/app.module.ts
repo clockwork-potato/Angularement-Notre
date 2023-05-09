@@ -32,6 +32,7 @@ import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
 import { ExoEmitComponent } from './exo-emit/exo-emit.component';
 import { BlogControlComponent } from './blog-control/blog-control.component';
 import { ArticleElementComponent } from './article-element/article-element.component';
+import { KatsankatreComponent } from './katsankatre/katsankatre.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ArticleElementComponent } from './article-element/article-element.compo
     ExoEmitComponent,
     BlogControlComponent,
     ArticleElementComponent,
+    KatsankatreComponent,
     
     
   ],

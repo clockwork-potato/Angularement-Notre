@@ -7,6 +7,7 @@ import { MarioComponent } from './mario/mario.component';
 import { FetchComponent } from './fetch/fetch.component';
 import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
 import { ExoEmitComponent } from './exo-emit/exo-emit.component';
+import { KatsankatreComponent } from './katsankatre/katsankatre.component';
 
 const routes: Routes = [
   { path: 'oui', component: OuiComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'mario', component: MarioComponent },
   { path: 'fetch', component: FetchComponent },
   { path: 'jeff', component: TpDirectivesComponent },
-  { path: 'emit', component: ExoEmitComponent }
+  { path: 'emit', component: ExoEmitComponent },
+  { path: '**', component: KatsankatreComponent }
 ];
 
 @NgModule({
