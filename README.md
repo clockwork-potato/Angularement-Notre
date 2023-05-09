@@ -1,4 +1,6 @@
-# Pétanque Club
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6e599c8-5be5-43a9-b311-2921b0b17bfb/deploy-status)](https://app.netlify.com/sites/angularement-votre/deploys)
+
+# https://angularement-votre.netlify.app/
 
 Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7. Il s'agit d'une application web dédiée au Club de Pétanque, utilisant Angular, Tailwind CSS et Font Awesome pour créer une expérience utilisateur moderne et réactive.
 
