@@ -1,0 +1,16 @@
+<br>
+<br>
+<br>
+<br>
+<div class="container mx-auto bg-gradient-to-r from-emerald-400 to-sky-400 p-4 min-h-screen">
+    <div class=" p-6">
+        <app-blog-control (articleCreated)="onArticleAdded($event)"
+            (brouillonCreated)="onBrouillonAdded($event)"></app-blog-control>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+        <div *ngFor="let articleElement of mesArticles">
+            <app-article-element [element]="articleElement">
+            </app-article-element>
+        </div>
+    </div>
+</div>

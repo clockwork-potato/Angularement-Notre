@@ -29,6 +29,9 @@ import { MarioComponent } from './mario/mario.component';
 import { FetchComponent } from './fetch/fetch.component';
 import { DatePipe } from '@angular/common';
 import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
+import { ExoEmitComponent } from './exo-emit/exo-emit.component';
+import { BlogControlComponent } from './blog-control/blog-control.component';
+import { ArticleElementComponent } from './article-element/article-element.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,9 @@ import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
     MarioComponent,
     FetchComponent,
     TpDirectivesComponent,
+    ExoEmitComponent,
+    BlogControlComponent,
+    ArticleElementComponent,
     
     
   ],
