@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { BouffeService } from '../truc/bouffe.service';
 
+interface Meal {
+  strMealThumb: string;
+  strCategory: string;
+  strMeal: string;
+  strInstructions: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +15,12 @@ import { BouffeService } from '../truc/bouffe.service';
 })
 export class HomeComponent implements OnInit {
 
-  meal: object = {};
+  meal?: Meal = {
+    strMealThumb: '',
+    strCategory: '',
+    strMeal: '',
+    strInstructions: ''
+  };
   title: string = 'Angularement Votre';
   name: string = 'tesdt';
 
@@ -16,7 +28,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.BouffeService.getRandomMeal().subscribe((r: any) => {
-      this.meal = r.meals;
+      this.meal = r.meals[0];
     });
   }
 }
