@@ -8,15 +8,15 @@ import { BouffeService } from '../truc/bouffe.service';
 })
 export class HomeComponent implements OnInit {
 
-  meal: any;
+  meal: object = {};
   title: string = 'Angularement Votre';
   name: string = 'tesdt';
 
   constructor(private BouffeService: BouffeService) { }
 
   ngOnInit() {
-    this.BouffeService.getRandomMeal().subscribe((response: any) => {
-      this.meal = response.meals[0];
+    this.BouffeService.getRandomMeal().subscribe((r: any) => {
+      this.meal = r.meals;
     });
   }
 }
