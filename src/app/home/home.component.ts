@@ -9,7 +9,7 @@ import { BouffeService } from '../truc/bouffe.service';
 export class HomeComponent implements OnInit {
 
   meal: any;
-  title: string = 'JvaisTangular';
+  title: string = 'Angularement Votre';
   name: string = 'tesdt';
 
   constructor(private BouffeService: BouffeService) { }
