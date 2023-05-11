@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, interval } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root',
 })
@@ -19,10 +19,9 @@ export class ApiService {
     return this._http.get(`${this.BASE_URL}/users/${id}`);
   }
 
-  getSinglePhoto(): Observable<any> {
+  getRandomPhoto(): Observable<Blob> {
     return interval(1000).pipe(
-      switchMap(() => this._http.get<any[]>('https://jsonplaceholder.typicode.com/photos')),
-      map(photos => photos[0])
+      switchMap(() => this._http.get('https://source.unsplash.com/random', {responseType: 'blob'}))
     );
   }
   

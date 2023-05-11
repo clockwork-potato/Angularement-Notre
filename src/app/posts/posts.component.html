@@ -1,7 +1,14 @@
-<div *ngIf="photo" class="photo bg-gray-200 p-4 flex items-center">
-    <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}" class="w-16 h-16 mr-4">
-    <div class="text-sm">
-      <h3 class="font-bold mb-2">{{ photo.title }}</h3>
-      <p><a [href]="photo.url" target="_blank" class="text-blue-500 hover:underline">lien de l'img</a></p>
+<div class="flex flex-col items-center justify-center h-screen bg-gray-200">
+    <h2 class="text-3xl mb-4">Une photo aléatoire chaque seconde</h2>
+    <p class="text-lg mb-8">Fourni par Floflo</p>
+    <div *ngIf="photoUrl" class="photo w-full max-w-lg rounded overflow-hidden shadow-lg">
+      <img [src]="photoUrl" alt="Random Unsplash Image" class="w-full">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Titre de l'image</div>
+        <p class="text-gray-700 text-base">
+          Ceci est une image aléatoire provenant de l'API Unsplash, elle change toutes les secondes.
+        </p>
+      </div>
     </div>
   </div>
+  
