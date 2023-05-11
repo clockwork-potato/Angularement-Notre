@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
 
@@ -33,6 +33,7 @@ import { ExoEmitComponent } from './exo-emit/exo-emit.component';
 import { BlogControlComponent } from './blog-control/blog-control.component';
 import { ArticleElementComponent } from './article-element/article-element.component';
 import { KatsankatreComponent } from './katsankatre/katsankatre.component';
+import { BouffeService } from './truc/bouffe.service';
 
 @NgModule({
   declarations: [
@@ -66,9 +67,10 @@ import { KatsankatreComponent } from './katsankatre/katsankatre.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [DatePipe],
+  providers: [DatePipe , BouffeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
