@@ -1,1 +1,7 @@
-<p>posts works!</p>
+<div *ngIf="photo" class="photo bg-gray-200 p-4 flex items-center">
+    <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}" class="w-16 h-16 mr-4">
+    <div class="text-sm">
+      <h3 class="font-bold mb-2">{{ photo.title }}</h3>
+      <p><a [href]="photo.url" target="_blank" class="text-blue-500 hover:underline">lien de l'img</a></p>
+    </div>
+  </div>
