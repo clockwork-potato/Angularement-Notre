@@ -34,6 +34,11 @@ import { BlogControlComponent } from './blog-control/blog-control.component';
 import { ArticleElementComponent } from './article-element/article-element.component';
 import { KatsankatreComponent } from './katsankatre/katsankatre.component';
 import { BouffeService } from './truc/bouffe.service';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { PostsComponent } from './posts/posts.component';
+import { CommentsComponent } from './comments/comments.component';
+import { TpJeffDeuxComponent } from './tp-jeff-deux/tp-jeff-deux.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +65,11 @@ import { BouffeService } from './truc/bouffe.service';
     BlogControlComponent,
     ArticleElementComponent,
     KatsankatreComponent,
+    UsersListComponent,
+    UserDetailComponent,
+    PostsComponent,
+    CommentsComponent,
+    TpJeffDeuxComponent,
     
     
   ],

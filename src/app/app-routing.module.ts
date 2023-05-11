@@ -8,6 +8,11 @@ import { FetchComponent } from './fetch/fetch.component';
 import { TpDirectivesComponent } from './tp-directives/tp-directives.component';
 import { ExoEmitComponent } from './exo-emit/exo-emit.component';
 import { KatsankatreComponent } from './katsankatre/katsankatre.component';
+import { TpJeffDeuxComponent } from './tp-jeff-deux/tp-jeff-deux.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { PostsComponent } from './posts/posts.component';
+import { CommentsComponent } from './comments/comments.component';
 
 const routes: Routes = [
   { path: 'oui', component: OuiComponent },
@@ -17,7 +22,16 @@ const routes: Routes = [
   { path: 'fetch', component: FetchComponent },
   { path: 'jeff', component: TpDirectivesComponent },
   { path: 'emit', component: ExoEmitComponent },
-  { path: '**', component: KatsankatreComponent }
+  {
+    path: 'tpdeux', component: TpJeffDeuxComponent,
+    children: [
+      { path: 'users', component: UsersListComponent },
+      { path: 'users/:id', component: UserDetailComponent },
+      { path: 'posts', component: PostsComponent },
+      { path: 'comments', component: CommentsComponent }
+    ]
+  },
+  { path: '**', component: KatsankatreComponent },
 ];
 
 @NgModule({
