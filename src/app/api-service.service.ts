@@ -17,7 +17,7 @@ export class ApiService {
   getUser(id: string) {
     return this._http.get(`${this.BASE_URL}/users/${id}`);
   }
-
+  //pour t'entrainer rajoute eu deux autres pages
   getPosts() {
     return this._http.get(`${this.BASE_URL}/posts`);
   }

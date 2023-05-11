@@ -1,5 +1,5 @@
-<div class="users-list bg-gray-200 p-4">
-  <h2 class="text-2xl font-bold mb-4">Liste des users</h2>
+<div class="users-list  p-4">
+  <h2 class="text-2xl text-blue-600 font-bold mb-4">Liste des users</h2>
   <div *ngFor="let user of users" class="bg-white p-4 rounded-lg mb-4 shadow-md flex items-center justify-between">
     <div>
       <h3 class="text-xl font-bold text-blue-500 hover:underline">
@@ -7,6 +7,6 @@
       </h3>
       <p class="text-gray-600">{{ user.email }}</p>
     </div>
-    <span class="inline-block bg-green-500 text-white px-2 py-1 rounded-full text-xs uppercase font-semibold">{{ user.role }}</span>
+    <span class="inline-block bg-green-500 text-white px-2 py-1 rounded-full text-xs uppercase font-semibold">{{ user.id }}</span>
   </div>
 </div>
